@@ -18,7 +18,7 @@ const yourData = [
   { source: "A", target: "D", value: 12 },
 ];
 
-const width = 540;  // 原來的寬度減半
+const width = 600;
 const height = width;
 const innerRadius = Math.min(width, height) * 0.5 - 10;
 const outerRadius = innerRadius + 3;
@@ -50,7 +50,7 @@ const svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height)
     .attr("viewBox", [-width / 2, -height / 2, width, height])
-    .attr("style", "width: 50%; height: auto; font: 10px sans-serif;");  // 調整樣式
+    .attr("style", "width: 100%; height: auto; font: 10px sans-serif;");
 
 const chords = chord(matrix);
 
